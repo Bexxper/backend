@@ -76,7 +76,7 @@ app.all('/player/growid/login/validate', async (req: Request, res: Response) => 
 if (isGuest) {
   const guestId = `guest_${Date.now()}`;
 
-  // 🔥 TAMBAH guest=1 sebagai penanda
+  // add guest=1 sebagai penanda
   raw = `_token=guest&growId=${guestId}&password=guest&guest=1`;
 
   console.log('[GUEST MODE]');
